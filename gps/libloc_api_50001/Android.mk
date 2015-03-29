@@ -32,7 +32,9 @@ LOCAL_CFLAGS += \
 	 -DNEW_QC_GPS
 
 LOCAL_C_INCLUDES:= \
-    $(TARGET_OUT_HEADERS)/gps.utils
+    $(TARGET_OUT_HEADERS)/gps.utils \
+    device/samsung/msm8660-common/include \
+    device/samsung/msm8660-common/gps/libloc_api_50001
 
 LOCAL_COPY_HEADERS_TO:= libloc_eng/
 LOCAL_COPY_HEADERS:= \
@@ -88,7 +90,9 @@ LOCAL_CFLAGS += \
 
 LOCAL_C_INCLUDES:= \
     $(TARGET_OUT_HEADERS)/gps.utils \
-    device/samsung/msm8660-common/gps/ulp/inc
+    device/samsung/msm8660-common/include \
+    device/samsung/msm8660-common/gps/ulp/inc \
+    device/samsung/msm8660-common/gps/libloc_api_50001
 
 LOCAL_PRELINK_MODULE := false
 
@@ -121,6 +125,7 @@ LOCAL_CFLAGS += \
 ## Includes
 LOCAL_C_INCLUDES:= \
     $(TARGET_OUT_HEADERS)/gps.utils \
+    device/samsung/msm8660-common/include \
     device/samsung/msm8660-common/gps/ulp/inc
 
 LOCAL_PRELINK_MODULE := false

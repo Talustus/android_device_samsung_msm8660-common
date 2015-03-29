@@ -102,9 +102,9 @@ PRODUCT_PACKAGES += \
     memtrack.msm8660
 
 # GalaxyS2Settings
-PRODUCT_PACKAGES += \
-    GalaxyS2Settings \
-    SamsungServiceMode
+#PRODUCT_PACKAGES += \
+#    GalaxyS2Settings \
+#    SamsungServiceMode
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -131,10 +131,11 @@ PRODUCT_COPY_FILES += \
 # NFC
 PRODUCT_PACKAGES += \
     libnfc \
-    libnfc_jni \
-    Nfc \
-    Tag \
-    com.android.nfc_extras
+    libnfc_jni
+
+#    Nfc \
+#    Tag \
+#    com.android.nfc_extras
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
     NFCEE_ACCESS_PATH := $(LOCAL_PATH)/configs/nfcee_access.xml
@@ -168,12 +169,12 @@ PRODUCT_PACKAGES += \
     qrngd
 
 # Torch
-PRODUCT_PACKAGES += \
-    Torch
+#PRODUCT_PACKAGES += \
+#    Torch
 
 # USB
-PRODUCT_PACKAGES += \
-    com.android.future.usb.accessory
+#PRODUCT_PACKAGES += \
+#    com.android.future.usb.accessory
 
 # Wifi
 PRODUCT_PACKAGES += \
